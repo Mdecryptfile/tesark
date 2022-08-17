@@ -1,0 +1,2 @@
+# tesark
+pkg update &amp;&amp; pkg upgrade -y $ pkg install termux-api $ termux-setup-storage $ su ( ctrl + d ) $ pkg install tsu $ pkg install root-repo $ pkg install termshark  How to run it:  $ tsu $ termshark -i any  Or filter the live capture command:  •Filter SNI/SSL : $ tshark -i any -n -Y tls.handshake.extensions_server_name -Tjson -e tls.handshake.extensions_server_name -e dns.qry.name -e ip.dst -e tcp.dstport
